@@ -1,0 +1,23 @@
+
+.pantallaInicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+}
+
+.pantallaInicio__iniciar{
+    background-color: var(--azul-oscuro);
+    border: 1px solid var(--azul-oscuro);
+    color:var(--letra-blanca);
+    padding:3rem 7rem;
+    width: fit-content;
+    margin-bottom: 3rem;
+}
+
+.pantallaInicio__agregar{
+    background-color: var(--background-azul-claro);
+    color:var(--azul-oscuro);
+    padding: 1.5rem 3.5rem;
+    width:fit-content;
+}

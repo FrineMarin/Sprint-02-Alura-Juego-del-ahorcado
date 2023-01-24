@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta charset="utf-8">
+    <title>Juego del Ahorcado </title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bases.css" rel="stylesheet">
+    <link href="css/inicio.css" rel="stylesheet">
+    <link href="css/agregar.css" rel="stylesheet">
+    <link href="css/iniciar.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo.svg" alt="Logo de Alura" class="logo">
+    </header>
+    <main>
+        <div class="pantallaInicio">
+            <button class="pantallaInicio__iniciar">Iniciar juego </button>
+            <button class="pantallaInicio__agregar">Agregar nueva palabra</button>
+        </div>
+        <div class="pantallaAgregar">
+            <div class="pantallaAgregar__elementos">
+                <textarea class="pantallaAgregar__textarea" placeholder="Ingrese una palabra" cols="30"
+                    rows="10"></textarea>
+                <p class="pantallaAgregar__informacion"> &#9432 Max. de 8 letras</p>
+                <ul class="pantallaAgregar__botones">
+                    <li><button class="botonAzul" id="botonGuardar">Guardar y empezar</button></li>
+                    <li><button class="botonTransparente" id="botonCancelar">Cancelar</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pantallaIniciar">
+            <div class="pantallaIniciar__interfaz">
+                    <canvas  width="498.25" height="370"></canvas>
+                
+                <ul class="pantallaIniciar__guiones">
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                    <li>
+                        <textarea class="letra" disabled></textarea>
+                        <hr class="guion">
+                    </li>
+                </ul>
+                <textarea class="letrasEquivocadas" disabled></textarea>
+                <textarea class="ingresarNuevaLetra" placeholder="Ingresa una letra"></textarea>
+                <div class="botones">
+                    <button class="botonAzul" id="botonNuevoJuego">Nuevo Juego</button>
+                    <button class="botonTransparente" id="botonDesistir">Desistir</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
+
+

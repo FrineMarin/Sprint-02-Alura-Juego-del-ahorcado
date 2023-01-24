@@ -1,0 +1,93 @@
+.pantallaIniciar{
+    justify-content: center;
+    height: calc(100vh - 88px);
+    align-items: flex-end;
+    display: none;
+}
+
+.pantallaIniciar__interfaz{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 9vh;
+}
+
+.pantallaIniciar__guiones{
+    display: flex;
+    justify-content: center;
+}
+
+.letra{
+    font-size: 3rem;
+    width: 80px;
+    height: 72px;
+    display: none;
+    text-align: center;
+    color: var(--azul-oscuro);
+    display: none;
+}
+
+.guion{
+    background-color: var(--azul-oscuro);
+    height: 4px;
+    width: 80px;
+    margin-right: 1rem;
+    margin-left: 0rem;
+    display: none;
+    border-radius: 8px;
+    display: none;
+}
+
+.letrasEquivocadas{
+    color:var(--letra-gris);
+    font-size: 1.5rem;
+    letter-spacing: 1.5rem;
+}
+
+.ingresarNuevaLetra{
+    align-self: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.botones{
+    margin-top: 5vh;
+    justify-content: center;
+    display: flex;
+}
+
+canvas{
+    align-self: center;
+}
+
+@media screen and (max-device-width:768px){
+    .guion{
+        width: 40px;
+    }
+
+    .letra{
+        width:40px;
+    }
+
+    .botones{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botonAzul{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .pantallaIniciar {
+        justify-content: center;
+        height: 100vh;
+    }
+   
+}
+
+@media screen and (max-device-width:1024px){
+    .pantallaIniciar__interfaz{
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+}
